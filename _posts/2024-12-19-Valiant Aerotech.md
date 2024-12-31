@@ -164,6 +164,22 @@ Our team consists of students from diverse backgrounds, including mechanical, el
     max-width: 150px;
     border-radius: 50%;
 }
+
+.team-member-img + a p {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .team-member-img + a p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-member-img + a p {
+        font-size: 10px;
+    }
+}
 </style>
 
 <script>
