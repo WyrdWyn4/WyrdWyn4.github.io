@@ -32,26 +32,12 @@
       color: black;
     }
   }
-
-  .profile-wrapper {
-    text-align: center; /* Center the avatar and text inside the wrapper */
-  }
-
-  #avatar {
-    display: inline-block; /* Make sure the avatar is inline with the text */
-  }
-
-  .site-title, .site-subtitle {
-    display: block;
-    margin-top: 10px; /* Add some spacing between the avatar and the text */
-  }
-  
 </style>
 
 <div id="hover-area"></div>
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-center" style="z-index: 1001;">
   <header class="profile-wrapper text-center w-100">
-    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle d-block mx-auto text-center">
+    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle d-block mx-auto text-center style="display: block; margin: 0 auto; text-align: center;">
       {%- if site.avatar != empty and site.avatar -%}
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}
