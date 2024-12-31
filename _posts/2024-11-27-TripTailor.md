@@ -128,7 +128,7 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
 > Checkout the [TripTailor GitHub Repository](https://github.com/WyrdWyn4/TripTailor), and the [Deepdive Article](/triptailor/detail) for a detailed look into the project.
 {: .prompt-tip}
 
-> In addition, a great [presentation](../assets/docs/TripTailor Presentation.pptx) from the team is available for download!
+> In addition, a great [presentation](../assets/docs/ptojects/triptailor/ptojects/triptailor/TripTailor Presentation.pptx) from the team is available for download!
 {: .prompt-tip}
 
 > **Note**: This project was developed as part of the [ECE 6400](https://www.mun.ca/university-calendar/st-johns-campus/faculty-of-engineering-and-applied-science/11/3/#d.en.365116) Software Development Course at the Memorial University of Newfoundland.
