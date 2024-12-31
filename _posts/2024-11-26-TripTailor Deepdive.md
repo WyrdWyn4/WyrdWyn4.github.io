@@ -632,5 +632,5 @@ In conclusion, the experience gained from designing and building TripTailor has 
 
 > Thank you very much :)
 
-> [Here's](../assets/docs/ptojects/triptailor/Final Group Report - TripTailor.pdf) a downloadable version of the above
+> [Here's](../assets/docs/projects/triptailor/Final Group Report - TripTailor.pdf) a downloadable version of the above
 {: .prompt-info }

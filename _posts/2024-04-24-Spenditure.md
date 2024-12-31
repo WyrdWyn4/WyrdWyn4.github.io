@@ -245,11 +245,11 @@ In closing, gratitude is expressed for the opportunity to work on this exciting 
 
 Thank you for your time and consideration :)
 
-> Checkout the [Spenditure GitHub Repository](https://github.com/WyrdWyn4/TripTailor)!
+> Checkout the [Spenditure GitHub Repository](https://github.com/WyrdWyn4/Spenditure)!
 {: .prompt-tip}
 
-> In addition, a great [presentation](../assets/docs/TripTailor Presentation.pptx) from the team is available for download!
+> In addition, a great [presentation](../assets/docs/projects/spenditure/Spenditure.pptx) and [design report](../assets/docs/projects/spenditure/Spenditure - Design Report.pdf) from the team are available for download!
 {: .prompt-tip}
 
-> **Note**: This project was developed as part of the Software Development Course at the Memorial University of Newfoundland.
+> **Note**: This project was developed as part of the [ECE 5010](https://www.mun.ca/university-calendar/st-johns-campus/faculty-of-engineering-and-applied-science/11/3/#d.en.365161) Software Development Course at the Memorial University of Newfoundland.
 {: .prompt-info}
