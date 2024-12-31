@@ -49,8 +49,8 @@ order: 4
   <strong>Email:</strong> wmksherwani@mun.ca | <strong>Phone:</strong> +1 (709) 327-5285 | <strong>Location:</strong> St. John’s, NL
 </div>
 <div style="text-align: center;">
-  <strong><a href="https://github.com/your-github">GitHub</a></strong> | 
-  <strong><a href="https://linkedin.com/in/your-linkedin">LinkedIn</a></strong>
+  <strong><a href="https://github.com/WyrdWyn4/">GitHub</a></strong> | 
+  <strong><a href="https://www.linkedin.com/in/wmksherwani/">LinkedIn</a></strong>
 </div>
 
 ## EDUCATION
@@ -63,7 +63,6 @@ Bachelor of Engineering
   <div class="rounded-box">Computer Engineering</div>
   <div class="rounded-box">Academic Term 6 (4th Year)</div>
   <div class="rounded-box">Class of 2026</div>
-  <div class="rounded-box">GPA: 3.79</div>
 </div>
 <div class="rounded-box-container">
 <div class="rounded-box"><a href="https://www.mun.ca/engineering/undergraduate/scholarships-and-awards/deans-list/deans-list---spring-2023/">Faculty of Engineering and Applied Sciences: Dean’s list (2022 – 2023)</a></div>
