@@ -125,7 +125,7 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
     </div>
 </div>
 
-> Checkout the [TripTailor GitHub Repository](https://github.com/jordyob03/TripTailor), and the [Deepdive Article](/triptailor/detail) for a detailed look into the project.
+> Checkout the [TripTailor GitHub Repository](https://github.com/WyrdWyn4/TripTailor), and the [Deepdive Article](/triptailor/detail) for a detailed look into the project.
 {: .prompt-tip}
 
 > In addition, a great [presentation](../assets/docs/TripTailor Presentation.pptx) from the team is available for download!
