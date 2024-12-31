@@ -19,10 +19,10 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="../assets/img/logos/spenditure/spenditure-logo.png" alt="TripTailor" style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;">
+        <img src="../assets/img/logos/spenditure/spenditure-logo.png" alt="TripTailor" style="width: 300px; object-fit: cover; border-radius: 50%;" class = "logo-img">
     </div>
     <div style="text-align: center;">
-        <img src="../assets/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; height: 300px; object-fit: contain;">
+        <img src="../assets/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; object-fit: contain;" class = "logo-img">
     </div>
 </div>
 
@@ -49,7 +49,7 @@ hidden: false
         </a>
     </div>
     <div>
-        <img src="assets/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/img/people/Ahmad Hajahmad.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/AAHajahmad" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ahmad Hajahmad</p>
         </a>
@@ -61,49 +61,6 @@ hidden: false
         </a>
     </div>
 </div>
-
-<style>
-.team-member-img {
-    max-height: 150px;
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-.team-member-img + a p {
-    font-size: 16px;
-}
-
-@media (max-width: 600px) {
-    .team-member-img + a p {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 400px) {
-    .team-member-img + a p {
-        font-size: 10px;
-    }
-}
-</style>
-
-<script>
-setTimeout(() => {
-    const images = document.querySelectorAll('.team-member-img');
-    let globalMin = 150;
-
-    images.forEach(img => {
-        const rect = img.getBoundingClientRect();
-        const minDim = Math.min(rect.width, rect.height);
-        globalMin = Math.min(globalMin, minDim);
-    });
-
-    images.forEach(img => {
-        img.style.width = `${globalMin}px`;
-        img.style.height = `${globalMin}px`;
-        img.style.borderRadius = '50%';
-    });
-}, 1000);
-</script>
 
 ---
 
@@ -296,3 +253,60 @@ Thank you for your time and consideration :)
 
 > **Note**: This project was developed as part of the [ECE 5010](https://www.mun.ca/university-calendar/st-johns-campus/faculty-of-engineering-and-applied-science/11/3/#d.en.365161) Software Development Course at the Memorial University of Newfoundland.
 {: .prompt-info}
+
+<style>
+  .team-member-img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+  }
+
+  .logo-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .team-member-img + a p {
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .team-member-img + a p {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .team-member-img + a p {
+      font-size: 10px;
+    }
+  }
+</style>
+
+<script>
+  function adjustImages(className) {
+    setTimeout(() => {
+      const images = document.querySelectorAll(`.${className}`);
+      let globalMin = Infinity;
+
+      images.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        const minDim = Math.min(rect.width, rect.height);
+        globalMin = Math.min(globalMin, minDim);
+      });
+
+      console.log('Global min:', globalMin, 'for class:', className);
+
+      images.forEach(img => {
+        img.style.width = `${globalMin}px`;
+        img.style.height = `${globalMin}px`;
+        img.style.borderRadius = '50%';
+      });
+    }, 1000);
+
+    console.log('Images adjusted for class:', className);
+  }
+
+  adjustImages('team-member-img');
+  adjustImages('logo-img');
+</script>
