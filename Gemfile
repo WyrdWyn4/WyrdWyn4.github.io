@@ -15,3 +15,6 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "csv"
 gem "base64"
+gem "json"
+gem "bootstrap"
+gem "sassc"
