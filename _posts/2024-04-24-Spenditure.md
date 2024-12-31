@@ -43,24 +43,51 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/WyrdWyn4" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Waleed Khan Sherwani</p>
         </a>
     </div>
     <div>
-        <img src="assets/img/people/X.png" alt="Team Member" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+        <img src="assets/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/AAHajahmad" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ahmad Hajahmad</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Mohammed Al Taie.png" alt="Team Member" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+        <img src="assets/img/people/Mohammed Al Taie.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/000M000" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Mohammed Al Taie</p>
         </a>
     </div>
 </div>
+
+<style>
+.team-member-img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+}
+</style>
+
+<script>
+setTimeout(() => {
+    const images = document.querySelectorAll('.team-member-img');
+    let globalMin = 150;
+
+    images.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        const minDim = Math.min(rect.width, rect.height);
+        globalMin = Math.min(globalMin, minDim);
+    });
+
+    images.forEach(img => {
+        img.style.width = `${globalMin}px`;
+        img.style.height = `${globalMin}px`;
+        img.style.borderRadius = '50%';
+    });
+}, 1000);
+</script>
 
 ---
 
