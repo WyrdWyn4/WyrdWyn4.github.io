@@ -23,3 +23,7 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
+assets/img/covers
+assets/img/logos
+assets/img/people
+assets/img/projects
