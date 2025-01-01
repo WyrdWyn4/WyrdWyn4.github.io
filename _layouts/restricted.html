@@ -13,17 +13,6 @@ layout: default
   {% else %} {{ content }} {% endif %}
 </article>
 
---- layout: default --- {% include lang.html %}
-
-<article class="px-1">
-  {% if page.layout == 'page' or page.collection == 'tabs' %} {% assign tab_key
-  = page.title | downcase %} {% assign title =
-  site.data.locales[lang].tabs[tab_key] | default: page.title %}
-  <h1 class="dynamic-title">{{ title }}</h1>
-  <div class="content">{{ content }}</div>
-  {% else %} {{ content }} {% endif %}
-</article>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -133,7 +122,9 @@ layout: default
     auth.checkSession({}, (err, authResult) => {
       if (err || !authResult) {
         console.log("Session not found or error:", err);
-        window.location.href = "https://wyrdwyn4.github.io/404";
+        window.location.href = `https://wyrdwyn4.ca.auth0.com/authorize?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&response_type=token%20id_token&redirect_uri=${encodeURIComponent(
+          window.location.href
+        )}&scope=openid%20profile%20email&nonce=${generateNonce()}`;
         return;
       }
 
@@ -146,20 +137,6 @@ layout: default
       );
       displayUser(authResult.idTokenPayload);
     });
-  }
-
-  function getAuthResultFromUrl() {
-    const urlParams = new URLSearchParams(window.location.hash.substr(1));
-    if (urlParams.has("access_token") && urlParams.has("id_token")) {
-      return {
-        accessToken: urlParams.get("access_token"),
-        idToken: urlParams.get("id_token"),
-        idTokenPayload: JSON.parse(
-          atob(urlParams.get("id_token").split(".")[1])
-        )
-      };
-    }
-    return null;
   }
 
   function displayUser(profile) {
