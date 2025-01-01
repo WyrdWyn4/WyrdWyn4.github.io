@@ -1,0 +1,176 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %} {% assign tab_key
+  = page.title | downcase %} {% assign title =
+  site.data.locales[lang].tabs[tab_key] | default: page.title %}
+  <h1 class="dynamic-title">{{ title }}</h1>
+  <div class="content">{{ content }}</div>
+  {% else %} {{ content }} {% endif %}
+</article>
+
+--- layout: default --- {% include lang.html %}
+
+<article class="px-1">
+  {% if page.layout == 'page' or page.collection == 'tabs' %} {% assign tab_key
+  = page.title | downcase %} {% assign title =
+  site.data.locales[lang].tabs[tab_key] | default: page.title %}
+  <h1 class="dynamic-title">{{ title }}</h1>
+  <div class="content">{{ content }}</div>
+  {% else %} {{ content }} {% endif %}
+</article>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restricted Page</title>
+    <script>
+      function loadAuth0Script() {
+        console.log("Loading Auth0 script...");
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = "https://cdn.auth0.com/js/auth0/9.21/auth0.min.js";
+          script.onload = () => {
+            console.log("Auth0 script loaded successfully.");
+            resolve();
+          };
+          script.onerror = (error) => {
+            console.error("Error loading Auth0 script:", error);
+            reject(error);
+          };
+          document.head.appendChild(script);
+        });
+      }
+
+      function displayUser(profile) {
+        console.log("Displaying user info:", profile);
+        document.getElementById(
+          "user-info"
+        ).textContent = `Logged in as: ${profile.name}`;
+      }
+
+      function getAuthResultFromUrl() {
+        console.log("Getting auth result from URL...");
+        const urlParams = new URLSearchParams(window.location.hash.substr(1));
+        if (urlParams.has("access_token") && urlParams.has("id_token")) {
+          console.log("Auth result found in URL:", urlParams);
+          return {
+            accessToken: urlParams.get("access_token"),
+            idToken: urlParams.get("id_token"),
+            idTokenPayload: JSON.parse(
+              atob(urlParams.get("id_token").split(".")[1])
+            )
+          };
+        }
+        console.log("No auth result in URL.");
+        return null;
+      }
+
+      function logout() {
+        console.log("Logging out...");
+        localStorage.clear();
+        const auth0LogoutUrl = `https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/`;
+        window.location.href = auth0LogoutUrl;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("Page loaded, initializing Auth0...");
+        initializeAuth0();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to the restricted page</h1>
+    <p id="user-info"></p>
+    <button onclick="logout()">Logout</button>
+  </body>
+</html>
+
+<script>
+  async function initializeAuth0() {
+    try {
+      console.log("Initializing Auth0...");
+      await loadAuth0Script();
+
+      const auth = new auth0.WebAuth({
+        domain: "wyrdwyn4.ca.auth0.com",
+        clientID: "hRGbOJutwauypUmF8Wsg702DC3Dfi8UT",
+        redirectUri: "https://wyrdwyn4.github.io/",
+        responseType: "token id_token",
+        scope: "openid profile email"
+      });
+
+      console.log("Auth0 initialized:", auth);
+
+      const authResult = getAuthResultFromUrl();
+      if (authResult) {
+        console.log("Auth result found:", authResult);
+        localStorage.setItem("access_token", authResult.accessToken);
+        localStorage.setItem("id_token", authResult.idToken);
+        localStorage.setItem(
+          "user_profile",
+          JSON.stringify(authResult.idTokenPayload)
+        );
+        displayUser(authResult.idTokenPayload);
+      } else {
+        console.log("No auth result in URL, checking session...");
+        checkSession(auth);
+      }
+    } catch (error) {
+      console.error("Error initializing Auth0:", error);
+      window.location.href = "https://wyrdwyn4.github.io/404";
+    }
+  }
+
+  function checkSession(auth) {
+    console.log("Checking session...");
+    auth.checkSession({}, (err, authResult) => {
+      if (err || !authResult) {
+        console.log("Session not found or error:", err);
+        window.location.href = "https://wyrdwyn4.github.io/404";
+        return;
+      }
+
+      console.log("Session active:", authResult);
+      localStorage.setItem("access_token", authResult.accessToken);
+      localStorage.setItem("id_token", authResult.idToken);
+      localStorage.setItem(
+        "user_profile",
+        JSON.stringify(authResult.idTokenPayload)
+      );
+      displayUser(authResult.idTokenPayload);
+    });
+  }
+
+  function getAuthResultFromUrl() {
+    const urlParams = new URLSearchParams(window.location.hash.substr(1));
+    if (urlParams.has("access_token") && urlParams.has("id_token")) {
+      return {
+        accessToken: urlParams.get("access_token"),
+        idToken: urlParams.get("id_token"),
+        idTokenPayload: JSON.parse(
+          atob(urlParams.get("id_token").split(".")[1])
+        )
+      };
+    }
+    return null;
+  }
+
+  function displayUser(profile) {
+    document.getElementById(
+      "user-info"
+    ).textContent = `Logged in as: ${profile.name}`;
+  }
+
+  document.addEventListener("DOMContentLoaded", initializeAuth0);
+
+  function generateNonce() {
+    return Math.random().toString(36).substr(2);
+  }
+</script>
