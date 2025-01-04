@@ -36,7 +36,7 @@ order: 5
           const auth = new auth0.WebAuth({
             domain: "wyrdwyn4.ca.auth0.com",
             clientID: "hRGbOJutwauypUmF8Wsg702DC3Dfi8UT",
-            redirectUri: "wyrdwyn4.github.io",
+            redirectUri: "https://wyrdwyn4.github.io/",
             responseType: "token id_token",
             scope: "openid profile email"
           });
@@ -61,7 +61,7 @@ order: 5
       function logout(auth) {
         console.log("Logging out...");
         localStorage.clear();
-        const auth0LogoutUrl = `https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=wyrdwyn4.github.io`;
+        const auth0LogoutUrl = `https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/`;
         window.location.href = auth0LogoutUrl;
       }
 

@@ -245,7 +245,7 @@ script_includes:
       const auth = new auth0.WebAuth({
         domain: "wyrdwyn4.ca.auth0.com",
         clientID: "hRGbOJutwauypUmF8Wsg702DC3Dfi8UT",
-        redirectUri: "wyrdwyn4.github.io",
+        redirectUri: "https://wyrdwyn4.github.io/",
         responseType: "token id_token",
         scope: "openid profile email"
       });
@@ -269,7 +269,7 @@ script_includes:
     } catch (error) {
       console.error("Error initializing Auth0:", error);
       localStorage.clear();
-      window.location.href = "wyrdwyn4.github.iologin/";
+      window.location.href = "https://wyrdwyn4.github.io/login/";
     }
   }
 
@@ -279,7 +279,7 @@ script_includes:
       if (err || !authResult) {
         console.log("Session not found or error:", err);
         localStorage.clear();
-        window.location.href = "wyrdwyn4.github.iologin/";
+        window.location.href = "https://wyrdwyn4.github.io/login/";
         return;
       }
 
