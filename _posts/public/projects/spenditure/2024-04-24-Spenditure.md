@@ -7,8 +7,8 @@ tags: [triptailor, software design, microservices, golang, react.js, postgresql,
 pin: true
 math: true
 mermaid: true
-image: assets/img/covers/spenditure/spenditure-cover.png
-author: 
+image: assets/public/img/covers/spenditure/spenditure-cover.png
+author: wmksherwani
 permalink: /spenditure/overview
 hidden: false
 ---
@@ -19,10 +19,10 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="../assets/img/logos/spenditure/spenditure-logo.png" alt="TripTailor" style="width: 300px; object-fit: cover; border-radius: 50%;" class = "logo-img">
+        <img src="../assets/public/img/logos/spenditure/spenditure-logo.png" alt="TripTailor" style="width: 300px; object-fit: cover; border-radius: 50%;" class = "logo-img">
     </div>
     <div style="text-align: center;">
-        <img src="../assets/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; object-fit: contain;" class = "logo-img">
+        <img src="../assets/public/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; object-fit: contain;" class = "logo-img">
     </div>
 </div>
 
@@ -43,19 +43,19 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/WyrdWyn4" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Waleed Khan Sherwani</p>
         </a>
     </div>
     <div>
-        <img src="assets/img/people/Ahmad Hajahmad.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Ahmad Hajahmad.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/AAHajahmad" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ahmad Hajahmad</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Mohammed Al Taie.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Mohammed Al Taie.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/000M000" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Mohammed Al Taie</p>
         </a>
@@ -143,7 +143,7 @@ The classes interact with each other to provide the overall functionality of Spe
 These interactions are shown better through the class diagram on the following page.
 
 ### Class Diagram
-![Class Diagram](assets/img/projects/spenditure/class-diagram.png)
+![Class Diagram](assets/public/img/projects/spenditure/class-diagram.png)
 
 ---
 
@@ -160,7 +160,7 @@ In this section, we dive into two practical applications of Spenditure's feature
 - The Transaction class sends the transaction details to the Database class.
 - The Database class updates the database with the new transaction.
 
-![Sequence Diagram - Adding a Transaction](assets/img/projects/spenditure/sequence-diagram-1.png)
+![Sequence Diagram - Adding a Transaction](assets/public/img/projects/spenditure/sequence-diagram-1.png)
 
 ### Use Case 2: Generating a Report
 
@@ -171,7 +171,7 @@ In this section, we dive into two practical applications of Spenditure's feature
 - The Analytics class processes the data and generates the report.
 - The report is then presented to the user.
 
-![Sequence Diagram - Generating a Report](assets/img/projects/spenditure/sequence-diagram-2.png)
+![Sequence Diagram - Generating a Report](assets/public/img/projects/spenditure/sequence-diagram-2.png)
 
 ---
 
@@ -212,7 +212,7 @@ JavaFX is a software platform for creating and delivering desktop applications.
 
 ### Sample UI
 
-![Sample UI](assets/img/projects/spenditure/sample-ui.png)
+![Sample UI](assets/public/img/projects/spenditure/sample-ui.png)
 
 ---
 
@@ -248,7 +248,7 @@ Thank you for your time and consideration :)
 > Checkout the [Spenditure GitHub Repository](https://github.com/WyrdWyn4/Spenditure)!
 {: .prompt-tip}
 
-> In addition, a great [presentation](../assets/docs/projects/spenditure/Spenditure.pptx) and [design report](../assets/docs/projects/spenditure/Spenditure - Design Report.pdf) from the team are available for download!
+> In addition, a great [presentation](../assets/public/docs/projects/spenditure/Spenditure.pptx) and [design report](../assets/public/docs/projects/spenditure/Spenditure - Design Report.pdf) from the team are available for download!
 {: .prompt-tip}
 
 > **Note**: This project was developed as part of the [ECE 5010](https://www.mun.ca/university-calendar/st-johns-campus/faculty-of-engineering-and-applied-science/11/3/#d.en.365161) Software Development Course at the Memorial University of Newfoundland.

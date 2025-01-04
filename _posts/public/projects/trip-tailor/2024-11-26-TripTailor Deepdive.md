@@ -7,8 +7,8 @@ tags: [triptailor, software design, microservices, golang, react.js, postgresql,
 pin: false
 math: true
 mermaid: true
-image: assets/img/covers/trip-tailor/triptailor-detail-cover.png
-author: 
+image: assets/public/img/covers/trip-tailor/triptailor-detail-cover.png
+author: wmksherwani
 permalink: /triptailor/detail
 hidden: false
 ---
@@ -19,10 +19,10 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="../assets/img/logos/trip-tailor/triptailor-logo.png" alt="TripTailor" style="width: 300px; object-fit: cover; border-radius: 50%;" class = "logo-img">
+        <img src="../assets/public/img/logos/trip-tailor/triptailor-logo.png" alt="TripTailor" style="width: 300px; object-fit: cover; border-radius: 50%;" class = "logo-img">
     </div>
     <div style="text-align: center;">
-        <img src="../assets/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; object-fit: contain;" class = "logo-img">
+        <img src="../assets/public/img/logos/memorial/memorial-logo.png" alt="TripTailor" style="width: 300px; object-fit: contain;" class = "logo-img">
     </div>
 </div>
 
@@ -48,19 +48,19 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/WyrdWyn4" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Waleed Khan Sherwani</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Ally Mackenzie Reid.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Ally Mackenzie Reid.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/allymreid" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ally Mackenzie Reid</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Miguel Diego Pond.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Miguel Diego Pond.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/MiguelPond" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Miguel Diego Pond</p>
         </a>
@@ -69,19 +69,19 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Léo Gilbert.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Léo Gilbert.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/Leo-Gilbert" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Léo Gilbert</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Jordyn Elizabeth O'Brien.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Jordyn Elizabeth O'Brien.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/jordyob03" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Jordyn Elizabeth O'Brien</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Abdulaziz Turonov.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Abdulaziz Turonov.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/AbdulTur" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Abdulaziz Turonov</p>
         </a>
@@ -90,19 +90,19 @@ hidden: false
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Noah James Colbourne.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Noah James Colbourne.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/noahjrc" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Noah James Colbourne</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Naomi Ann Pierce.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Naomi Ann Pierce.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/napierce" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Naomi Ann Pierce</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Mitch C. Roberts.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Mitch C. Roberts.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/MitchRoberts" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Mitch C. Roberts</p>
         </a>
@@ -214,7 +214,7 @@ The application consists of seven core tables:
 
 The Tables are connected with the relationships as outlined below:
 
-![Database Design](../assets/img/projects/triptailor/Database Design.png)
+![Database Design](../assets/public/img/projects/triptailor/Database Design.png)
 
 ## Project Management
 
@@ -232,7 +232,7 @@ For this project Agile Scrum methodologies were used to manage the project. Jira
 **Confluence**
 : Documentation, including specifications and meeting notes, was maintained on Confluence to keep everyone informed and aligned.
 
-![Project Management](../assets/img/projects/triptailor/Sprint.png)
+![Project Management](../assets/public/img/projects/triptailor/Sprint.png)
 
 ## Testing
 
@@ -279,7 +279,7 @@ In addition to testing, the CI/CD pipeline includes a virtual code review step. 
 
 The Main-service is a core backend component, serving and facilitating the essential operations of the application, including database management, data population, and the provision of RESTful endpoints for client interactions.
 
-![Service Flow](../assets/img/projects/triptailor/Service Flow.png)
+![Service Flow](../assets/public/img/projects/triptailor/Service Flow.png)
 
 #### Database Management
 
@@ -328,7 +328,7 @@ The authentication service handles the backend operations of signup and signin f
 
 #### Signup
 
-![Signup](../assets/img/projects/triptailor/Signup.png)
+![Signup](../assets/public/img/projects/triptailor/Signup.png)
 
 The signup page is responsible for creating user credentials for accessing TripTailor. As can be observed from the above figure, the signup pages take the following user credentials, username, email, password confirm password and date of birth.
 
@@ -357,7 +357,7 @@ The data is stored in the users table in the database. Further the username is t
 
 #### Sign In
 
-![Signin](../assets/img/projects/triptailor/Signin.png)
+![Signin](../assets/public/img/projects/triptailor/Signin.png)
 
 The sign in page handles the user sign in. The page has a username and password fields. Once the sign in form is submitted, the data is sent to the /signin endpoint within the authentication service in the backend.
 
@@ -374,14 +374,14 @@ The Profile Service handles the creation and updating of user profiles. Users ca
 
 #### Profile Creation/Update
 
-![Profile](../assets/img/projects/triptailor/Profile Create Update.png)
+![Profile](../assets/public/img/projects/triptailor/Profile Create Update.png)
 
 When creating a profile, a user will enter their name to display it on their profile; this is not a mandatory field.
 
 > Users must also select tags for trip topics they are interested in; this is mandatory, and users must select at least three tags.
 {: .prompt-info}
 
-![Profile](../assets/img/projects/triptailor/Location and Language.png)
+![Profile](../assets/public/img/projects/triptailor/Location and Language.png)
 
 > Users must then select their country of residence, as this is a mandatory field for profile creation, and users must also select the language/languages they speak as this is a mandatory field.
 {: .prompt-info}
@@ -401,13 +401,13 @@ The itinerary service handles the creation, storage and retrieval of itineraries
 
 When the user fills out the itinerary creation page and press submits an API will handle the transfer of information from the front end to the backend. The backend will parse the information accordingly and add the itinerary, events and photos to the corresponding table in the database.
 
-![Itinerary Creation](../assets/img/projects/triptailor/Itinerary Creation.png)
+![Itinerary Creation](../assets/public/img/projects/triptailor/Itinerary Creation.png)
 
 #### Itinerary retrieval
 
 The itinerary service also handles the retrieval of itineraries for both the feed and displaying the user’s posted itineraries. An API was created to request that the backend retrieves itineraries. When a request is made the backend will get the necessary itineraries and send them to the front end for them to be displayed.
 
-![Itinerary Retrieval](../assets/img/projects/triptailor/Itinerary Retrieval.png)
+![Itinerary Retrieval](../assets/public/img/projects/triptailor/Itinerary Retrieval.png)
 
 ### Feed Service
 
@@ -415,7 +415,7 @@ The itinerary service also handles the retrieval of itineraries for both the fee
 
 The feed service is responsible for displaying filtered itineraries based on the users selected tags within the profile creation screen. It will fetch data and update the UI in an organized format, as shown below.
 
-![Feed Service](../assets/img/projects/triptailor/Feed Service.png)
+![Feed Service](../assets/public/img/projects/triptailor/Feed Service.png)
 
 #### Feed Creation
 
@@ -430,7 +430,7 @@ This is done through a series of API calls to retrieve the users tags, and relat
 
 Tag-based filtering is a core feature of the feed service. This allows users to customize their experience in TripTailor by selecting specific tags that match their interests. Since each itinerary is associated with more than one tag, you can select multiple tags to filter at the top of the page, shown in figure # in the red box.
 
-![Tag Based Filtering](../assets/img/projects/triptailor/Tag Based Filtering.png)
+![Tag Based Filtering](../assets/public/img/projects/triptailor/Tag Based Filtering.png)
 
 The process starts once the user clicks a tag they want to filter by. which is then added to a list of selected tags. The feed service will then send a request to the backend, with the selectee tags, to then find all the matching itineraries. Once the data is retrieved, the system will update the feed to display only the filtered results.
 
@@ -448,7 +448,7 @@ The Search Service is a backend service that is designed to enable users to sear
 
 The service will then dynamically generate a query to retrieve and rank itineraries based on their relevance to the users search. Building on top of the itinerary data type, the search service uses a ScoredItinerary which is effectively an itinerary with an additional attribute called TotalMatchScore to provide users with itineraries that are most relevant to their search.
 
-![Search Service](../assets/img/projects/triptailor/Search Service.png)
+![Search Service](../assets/public/img/projects/triptailor/Search Service.png)
 
 #### Functionality and Querying Process
 
@@ -486,11 +486,11 @@ It includes operations such as retrieving boards, adding posts to boards, editin
 
 Pressing `Save` allows us to save the Itinerary to either an existing, or new Board, as seen below:
 
-![Save Service](../assets/img/projects/triptailor/Save Service.png)
+![Save Service](../assets/public/img/projects/triptailor/Save Service.png)
 
 This results in:
 
-![Save Service Result](../assets/img/projects/triptailor/Save Service Result.png)
+![Save Service Result](../assets/public/img/projects/triptailor/Save Service Result.png)
 
 #### Endpoints and Functionalities
 
@@ -632,7 +632,7 @@ In conclusion, the experience gained from designing and building TripTailor has 
 
 > Thank you very much :)
 
-> [Here's](../assets/docs/projects/triptailor/Final Group Report - TripTailor.pdf) a downloadable version of the above
+> [Here's](../assets/public/docs/projects/triptailor/Final Group Report - TripTailor.pdf) a downloadable version of the above
 {: .prompt-info }
 
 <style>

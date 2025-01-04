@@ -5,8 +5,8 @@ description: "The Mission Planner is a software tool that allows users to plan a
 categories: [Projects, Valiant Aerotech, Mission Planner]
 tags: [team, about]
 comments: true
-image: assets/img/covers/valiant-aerotech/valiant-aerotech-cover.png
-author: 
+image: assets/public/img/covers/valiant-aerotech/valiant-aerotech-cover.png
+author: wmksherwani
 permalink: /valiant-aerotech/mission-planner/overview
 hidden: false
 ---

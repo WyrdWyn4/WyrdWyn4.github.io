@@ -7,8 +7,8 @@ tags: [triptailor, software design, microservices, golang, react.js, postgresql,
 pin: false
 math: true
 mermaid: true
-image: assets/img/covers/trip-tailor/triptailor-contribution-cover.png
-author: 
+image: assets/public/img/covers/trip-tailor/triptailor-contribution-cover.png
+author: wmksherwani
 permalink: /triptailor/contribution
 hidden: false
 ---

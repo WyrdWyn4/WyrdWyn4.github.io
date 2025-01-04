@@ -7,8 +7,8 @@ tags: [triptailor, software design, microservices, golang, react.js, postgresql,
 pin: true
 math: true
 mermaid: true
-image: assets/img/covers/trip-tailor/triptailor-overview-cover.png
-author: 
+image: assets/public/img/covers/trip-tailor/triptailor-overview-cover.png
+author: wmksherwani
 permalink: /triptailor/overview
 hidden: false
 ---
@@ -17,7 +17,7 @@ hidden: false
 
 ## Overview
 
-![logo](assets/img/logos/trip-tailor/triptailor-logo.png){: style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;" }
+![logo](assets/public/img/logos/trip-tailor/triptailor-logo.png){: style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;" }
 
 **TripTailor** is a platform designed to revolutionize travel planning by offering a seamless and personalized experience for users to create, share, and explore travel itineraries. Combining personalization, community engagement, and intuitive features, TripTailor empowers users to craft itineraries tailored to their unique interests, demographics, and budgets.
 
@@ -64,19 +64,19 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/WyrdWyn4" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Waleed Khan Sherwani</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Ally Mackenzie Reid.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Ally Mackenzie Reid.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/allymreid" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ally Mackenzie Reid</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Miguel Diego Pond.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Miguel Diego Pond.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/MiguelPond" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Miguel Diego Pond</p>
         </a>
@@ -85,19 +85,19 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Léo Gilbert.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Léo Gilbert.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/Leo-Gilbert" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Léo Gilbert</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Jordyn Elizabeth O'Brien.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Jordyn Elizabeth O'Brien.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/jordyob03" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Jordyn Elizabeth O'Brien</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Abdulaziz Turonov.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Abdulaziz Turonov.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/AbdulTur" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Abdulaziz Turonov</p>
         </a>
@@ -106,19 +106,19 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Noah James Colbourne.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Noah James Colbourne.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/noahjrc" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Noah James Colbourne</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Naomi Ann Pierce.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Naomi Ann Pierce.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/napierce" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Naomi Ann Pierce</p>
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/img/people/Mitch C. Roberts.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <img src="assets/public/img/people/Mitch C. Roberts.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <a href="https://github.com/MitchRoberts" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Mitch C. Roberts</p>
         </a>
@@ -128,7 +128,7 @@ TripTailor combines innovation and simplicity to create an enjoyable and efficie
 > Checkout the [TripTailor GitHub Repository](https://github.com/WyrdWyn4/TripTailor), and the [Deepdive Article](/triptailor/detail) for a detailed look into the project.
 {: .prompt-tip}
 
-> In addition, a great [presentation](../assets/docs/projects/triptailor/ptojects/triptailor/TripTailor Presentation.pptx) from the team is available for download!
+> In addition, a great [presentation](../assets/public/docs/projects/triptailor/ptojects/triptailor/TripTailor Presentation.pptx) from the team is available for download!
 {: .prompt-tip}
 
 > **Note**: This project was developed as part of the [ECE 6400](https://www.mun.ca/university-calendar/st-johns-campus/faculty-of-engineering-and-applied-science/11/3/#d.en.365116) Software Development Course at the Memorial University of Newfoundland.

@@ -39,7 +39,7 @@ order: 4
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <div style="text-align: center;">
-        <img src="assets/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 450px; height: 450px; object-fit: cover">
+        <img src="assets/public/img/people/Waleed Mannan Khan Sherwani.png" alt="Team Member" style="width: 450px; height: 450px; object-fit: cover">
         <a href="https://github.com/WyrdWyn4" target="_blank">
         </a>
     </div>
