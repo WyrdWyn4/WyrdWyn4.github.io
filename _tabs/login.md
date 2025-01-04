@@ -108,9 +108,8 @@ order: 5
   <body>
     <div class="login-container">
       <i class="fas fa-user-circle" style="font-size: 100px; color: #006600;"></i>
-      <h1>Welcome to the Login Page</h1>
-      <p>Please log in to access restricted content.</p>
-      <button id="login-btn">Login</button>
+      <h1 style="text-align: center;">Welcome to the Login Page</h1>
+      <p style="text-align: center;">Please log in to access restricted content.</p>     <button id="login-btn">Login</button>
       <button id="logout-btn" class="logout">Logout</button>
     </div>
   </body>
