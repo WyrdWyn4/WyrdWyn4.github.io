@@ -269,7 +269,8 @@ script_includes:
     } catch (error) {
       console.error("Error initializing Auth0:", error);
       localStorage.clear();
-      window.location.href = "https://wyrdwyn4.github.io/login/";
+      window.location.href =
+        "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/login/";
     }
   }
 
@@ -279,7 +280,8 @@ script_includes:
       if (err || !authResult) {
         console.log("Session not found or error:", err);
         localStorage.clear();
-        window.location.href = "https://wyrdwyn4.github.io/login/";
+        window.location.href =
+          "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/login/";
         return;
       }
 

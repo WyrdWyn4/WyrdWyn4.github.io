@@ -107,10 +107,56 @@ order: 5
   </head>
   <body>
     <div class="login-container">
-      <i class="fas fa-user-circle" style="font-size: 100px; color: #006600;"></i>
+      <i class="fas fa-user-circle" style="font-size: 100px;"></i>
       <h1 style="text-align: center;">Welcome to the Login Page</h1>
-      <p style="text-align: center;">Please log in to access restricted content.</p>     <button id="login-btn">Login</button>
+      <p style="text-align: center;">Please log in to access restricted content.</p>
+      <button id="login-btn">Login</button>
       <button id="logout-btn" class="logout">Logout</button>
     </div>
   </body>
 </html>
+
+<style>
+  .dark-mode .login-container i,
+  .dark-mode .login-container h1,
+  .dark-mode .login-container p {
+    color: white;
+  }
+  .light-mode .login-container i,
+  .light-mode .login-container h1,
+  .light-mode .login-container p {
+    color: black;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+      applyThemeColors();
+    });
+  });
+
+  function applyThemeColors() {
+    const themeMapper = Theme.getThemeMapper('default', 'dark');
+    const newTheme = themeMapper[Theme.visualState];
+
+    console.log("Theme mode: " + newTheme);
+    const login = document.querySelector('.login-container');
+
+    if (newTheme === "dark") {
+      login.style.color = 'white';
+      console.log("Dark mode enabled");
+    } else {
+      login.style.color = 'black';
+      console.log("Light mode enabled");
+    }
+  }
+</script>
+
+<br><br><br><br><br>
+
+> Access to some resources are restricted. Please request [The Administrator](http://127.0.0.1:4000/about/) for access.
+{: .prompt-tip }
