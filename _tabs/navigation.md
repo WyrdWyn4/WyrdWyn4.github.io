@@ -5,129 +5,298 @@ icon: fas fa-map
 order: 4
 ---
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table View</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-family: Arial, sans-serif;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-    }
-    th {
-      font-weight: bold;
-    }
-    tr:nth-child(even) {
-    }
-    tr:hover {
-    }
-    a {
-      text-decoration: none;
-      color:rgb(125, 125, 125);
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <table>
-    <thead>
-      <tr>
-        <th>Section</th>
-        <th>Subsection</th>
-        <th>Links</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td rowspan="7">Root Directories</td>
-        <td>Home</td>
-        <td><a href="/">Home</a></td>
-      </tr>
-      <tr>
-        <td>Categories</td>
-        <td><a href="/categories">Categories</a></td>
-      </tr>
-      <tr>
-        <td>Tags</td>
-        <td><a href="/tags">Tags</a></td>
-      </tr>
-      <tr>
-        <td>Archives</td>
-        <td><a href="/archives">Archives</a></td>
-      </tr>
-      <tr>
-        <td>About</td>
-        <td><a href="/about">About</a></td>
-      </tr>
-      <tr>
-        <td>Navigation</td>
-        <td><a href="/navigation">Navigation</a></td>
-      </tr>
-      <tr>
-        <td>Login</td>
-        <td><a href="/login">Login</a></td>
-      </tr>
-      <tr>
-        <td rowspan="10">Projects</td>
-        <td rowspan="2">Pi Molecular Research</td>
-        <td><a href="/projects/crem">CReM</a></td>
-      </tr>
-      <tr><td><a href="/projects/crem-basic-example">CReM Basic Example</a></td></tr>
-      <tr>
-        <td>Spenditure</td>
-        <td><a href="/projects/spenditure">Spenditure</a></td>
-      </tr>
-      <tr>
-        <td rowspan="4">TripTailor</td>
-        <td><a href="/projects/triptailor">TripTailor</a></td>
-      </tr>
-      <tr><td><a href="/projects/triptailor-deepdives">TripTailor Deepdives</a></td></tr>
-      <tr><td><a href="/projects/triptailor-contribution">TripTailor Contribution</a></td></tr>
-      <tr><td><a href="/projects/triptailor-commits">TripTailor Commits</a></td></tr>
-      <tr>
-        <td rowspan="2">Valiant Aerotech</td>
-        <td><a href="/projects/valiant-aerotech">Valiant Aerotech</a></td>
-      </tr>
-      <tr><td><a href="/projects/valiant-aerotech/mission-planner/overview">Mission Planner Overview</a></td></tr>
-    </tbody>
-      <tr>
-        <td rowspan="28">Studies</td>
-        <td rowspan="27">Courses</td>
-      <tr><td><a href="/projects/studies/courses/engineering-one/ENGI-1010">ENGI 1010 - Engineering Statics</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/engineering-one/ENGI-1020">ENGI 1020 - Introduction to Programming</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/engineering-one/ENGI-1030">ENGI 1030 - Engineering Graphics and Design</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/engineering-one/ENGI-1040">ENGI 1040 - Electric Circuits</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/engineering-one/MATH-2050">MATH 2050 - Linear Algebra I</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/ECE-3300">ECE 3300 - Circuit Analysis</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/ECE-3400">ECE 3400 - Foundations of Programming</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/ECE-3500">ECE 3500 - Digital Logic</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/ENGI-3101">ENGI 3101 - Engineering Professionalism I</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/ENGI-3424">ENGI 3424 - Engineering Mathematics</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-3/PHYS-3000">PHYS 3000 - Physics of Device Materials</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/elective/ENGI-8151">ENGI 8151 - Technology, Sustainable Society and International Development</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-4/ECE-4110">ECE 4110 - Discrete Mathematics for Computer Engineering</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-4/ECE-4300">ECE 4300 - Electronic Circuits I</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-4/ECE-4400">ECE 4400 - Data Structures</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-4/ECE-4500">ECE 4500 - Microprocessors</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-4/ECE-4600">ECE 4600 - Introduction to Systems and Signals</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/elective/SOCI-1000">SOCI 1000 - Introduction to Sociology</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-5/ECE-5010">ECE 5010 - Software Design</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-5/ECE-5100">ECE 5100 - Probability and Random Processes</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-5/ECE-5200">ECE 5200 - Control Systems I</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-5/ECE-5400">ECE 5400 - Algorithms: Correctness and Complexity</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-5/ECE-5500">ECE 5500 - Digital Systems</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/elective/ENGI-4102">ENGI 4102 - Engineering Economics</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-6/COMP-3401">COMP 3401 - Introduction to Data Mining</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-6/ECE-6400">ECE 6400 - Software Development Practice</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-6/ECE-6500">ECE 6500 - Computer Architecture</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-6/ECE-6600">ECE 6600 - Communication Principles</a></td></tr>
-      <tr><td><a href="/projects/studies/courses/term-6/ECE-6610">ECE 6610 - Communication Networks</a></td></tr>
+- [/posts/text-and-typography](https://wyrdwyn4.github.io/posts/text-and-typography)
+- [/posts/write-a-new-post](https://wyrdwyn4.github.io/posts/write-a-new-post)
+- [/projects/studies/courses/engineering-one/ENGI-1010](https://wyrdwyn4.github.io/projects/studies/courses/engineering-one/ENGI-1010)
+- [/projects/studies/courses/engineering-one/ENGI-1020](https://wyrdwyn4.github.io/projects/studies/courses/engineering-one/ENGI-1020)
+- [/projects/studies/courses/engineering-one/ENGI-1030](https://wyrdwyn4.github.io/projects/studies/courses/engineering-one/ENGI-1030)
+- [/projects/studies/courses/engineering-one/ENGI-1040](https://wyrdwyn4.github.io/projects/studies/courses/engineering-one/ENGI-1040)
+- [/projects/studies/courses/engineering-one/MATH-2050](https://wyrdwyn4.github.io/projects/studies/courses/engineering-one/MATH-2050)
+
+- [/projects/studies/courses/term-3/ECE-3300](https://wyrdwyn4.github.io/projects/studies/courses/term-3/ECE-3300)
+- [/projects/studies/courses/term-3/ECE-3400](https://wyrdwyn4.github.io/projects/studies/courses/term-3/ECE-3400)
+- [/projects/studies/courses/term-3/ECE-3500](https://wyrdwyn4.github.io/projects/studies/courses/term-3/ECE-3500)
+- [/projects/studies/courses/term-3/ENGI-3101](https://wyrdwyn4.github.io/projects/studies/courses/term-3/ENGI-3101)
+- [/projects/studies/courses/term-3/ENGI-3424](https://wyrdwyn4.github.io/projects/studies/courses/term-3/ENGI-3424)
+- [/projects/studies/courses/term-3/PHYS-3000](https://wyrdwyn4.github.io/projects/studies/courses/term-3/PHYS-3000)
+
+- [/projects/studies/courses/elective/ENGI-8151](https://wyrdwyn4.github.io/projects/studies/courses/elective/ENGI-8151)
+
+- [/projects/studies/courses/term-4/ECE-4110](https://wyrdwyn4.github.io/projects/studies/courses/term-4/ECE-4110)
+- [/projects/studies/courses/term-4/ECE-4300](https://wyrdwyn4.github.io/projects/studies/courses/term-4/ECE-4300)
+- [/projects/studies/courses/term-4/ECE-4400](https://wyrdwyn4.github.io/projects/studies/courses/term-4/ECE-4400)
+- [/projects/studies/courses/term-4/ECE-4500](https://wyrdwyn4.github.io/projects/studies/courses/term-4/ECE-4500)
+- [/projects/studies/courses/term-4/ECE-4600](https://wyrdwyn4.github.io/projects/studies/courses/term-4/ECE-4600)
+
+- [/projects/studies/courses/elective/SOCI-1000](https://wyrdwyn4.github.io/projects/studies/courses/elective/SOCI-1000)
+
+- [/projects/studies/courses/term-5/ECE-5010](https://wyrdwyn4.github.io/projects/studies/courses/term-5/ECE-5010)
+- [/projects/studies/courses/term-5/ECE-5100](https://wyrdwyn4.github.io/projects/studies/courses/term-5/ECE-5100)
+- [/projects/studies/courses/term-5/ECE-5200](https://wyrdwyn4.github.io/projects/studies/courses/term-5/ECE-5200)
+- [/projects/studies/courses/term-5/ECE-5400](https://wyrdwyn4.github.io/projects/studies/courses/term-5/ECE-5400)
+- [/projects/studies/courses/term-5/ECE-5500](https://wyrdwyn4.github.io/projects/studies/courses/term-5/ECE-5500)
+
+- [/projects/spenditure/overview](https://wyrdwyn4.github.io/projects/spenditure/overview)
+
+- [/projects/studies/courses/elective/ENGI-4102](https://wyrdwyn4.github.io/projects/studies/courses/elective/ENGI-4102)
+- [/projects/studies/courses/term-6/COMP-3401](https://wyrdwyn4.github.io/projects/studies/courses/term-6/COMP-3401)
+- [/projects/studies/courses/term-6/ECE-6400](https://wyrdwyn4.github.io/projects/studies/courses/term-6/ECE-6400)
+- [/projects/studies/courses/term-6/ECE-6500](https://wyrdwyn4.github.io/projects/studies/courses/term-6/ECE-6500)
+- [/projects/studies/courses/term-6/ECE-6600](https://wyrdwyn4.github.io/projects/studies/courses/term-6/ECE-6600)
+- [/projects/studies/courses/term-6/ECE-6610](https://wyrdwyn4.github.io/projects/studies/courses/term-6/ECE-6610)
+
+- [/projects/triptailor/commits](https://wyrdwyn4.github.io/projects/triptailor/commits)
+- [/projects/triptailor/contribution](https://wyrdwyn4.github.io/projects/triptailor/contribution)
+- [/projects/triptailor/detail](https://wyrdwyn4.github.io/projects/triptailor/detail)
+- [/projects/triptailor/overview](https://wyrdwyn4.github.io/projects/triptailor/overview)
+
+- [/projects/valiant-aerotech/mission-planner/overview](https://wyrdwyn4.github.io/projects/valiant-aerotech/mission-planner/overview)
+- [/projects/valiant-aerotech](https://wyrdwyn4.github.io/projects/valiant-aerotech)
+
+- [/projects/crem/basic-example](https://wyrdwyn4.github.io/projects/crem/basic-example)
+- [/projects/crem/overview](https://wyrdwyn4.github.io/projects/crem/overview)
+
+- [/projects/studies/courses/restricted](https://wyrdwyn4.github.io/projects/studies/courses/restricted)
+
+- [/categories](https://wyrdwyn4.github.io/categories)
+- [/tags](https://wyrdwyn4.github.io/tags)
+- [/archives](https://wyrdwyn4.github.io/archives)
+- [/about](https://wyrdwyn4.github.io/about)
+- [/navigation](https://wyrdwyn4.github.io/navigation)
+- [/login](https://wyrdwyn4.github.io/login)
+- [](https://wyrdwyn4.github.io)
+
+- [/tags/typography](https://wyrdwyn4.github.io/tags/typography)
+- [/tags/writing](https://wyrdwyn4.github.io/tags/writing)
+- [/tags/engineering](https://wyrdwyn4.github.io/tags/engineering)
+- [/tags/statics](https://wyrdwyn4.github.io/tags/statics)
+- [/tags/mechanics](https://wyrdwyn4.github.io/tags/mechanics)
+- [/tags/vector-algebra](https://wyrdwyn4.github.io/tags/vector-algebra)
+- [/tags/free-body-diagrams](https://wyrdwyn4.github.io/tags/free-body-diagrams)
+- [/tags/trusses](https://wyrdwyn4.github.io/tags/trusses)
+- [/tags/frames](https://wyrdwyn4.github.io/tags/frames)
+- [/tags/machines](https://wyrdwyn4.github.io/tags/machines)
+- [/tags/friction](https://wyrdwyn4.github.io/tags/friction)
+- [/tags/centroids](https://wyrdwyn4.github.io/tags/centroids)
+- [/tags/moments-of-area](https://wyrdwyn4.github.io/tags/moments-of-area)
+- [/tags/programming](https://wyrdwyn4.github.io/tags/programming)
+- [/tags/algorithmic-problem-solving](https://wyrdwyn4.github.io/tags/algorithmic-problem-solving)
+- [/tags/control-structures](https://wyrdwyn4.github.io/tags/control-structures)
+- [/tags/functional-decomposition](https://wyrdwyn4.github.io/tags/functional-decomposition)
+- [/tags/design-by-contract](https://wyrdwyn4.github.io/tags/design-by-contract)
+- [/tags/modern-programming-language](https://wyrdwyn4.github.io/tags/modern-programming-language)
+- [/tags/engineering-graphics](https://wyrdwyn4.github.io/tags/engineering-graphics)
+- [/tags/cad](https://wyrdwyn4.github.io/tags/cad)
+- [/tags/design-methodologies](https://wyrdwyn4.github.io/tags/design-methodologies)
+- [/tags/orthographic-projections](https://wyrdwyn4.github.io/tags/orthographic-projections)
+- [/tags/dimensioning](https://wyrdwyn4.github.io/tags/dimensioning)
+- [/tags/sectioning](https://wyrdwyn4.github.io/tags/sectioning)
+- [/tags/graphic-communication](https://wyrdwyn4.github.io/tags/graphic-communication)
+- [/tags/engineering-design](https://wyrdwyn4.github.io/tags/engineering-design)
+- [/tags/electric-circuits](https://wyrdwyn4.github.io/tags/electric-circuits)
+- [/tags/circuit-analysis](https://wyrdwyn4.github.io/tags/circuit-analysis)
+- [/tags/engineering-skills](https://wyrdwyn4.github.io/tags/engineering-skills)
+- [/tags/network-theorems](https://wyrdwyn4.github.io/tags/network-theorems)
+- [/tags/wheatstone-bridge](https://wyrdwyn4.github.io/tags/wheatstone-bridge)
+- [/tags/operational-amplifiers](https://wyrdwyn4.github.io/tags/operational-amplifiers)
+- [/tags/laboratory-practices](https://wyrdwyn4.github.io/tags/laboratory-practices)
+- [/tags/linear-algebra](https://wyrdwyn4.github.io/tags/linear-algebra)
+- [/tags/euclidean-space](https://wyrdwyn4.github.io/tags/euclidean-space)
+- [/tags/vector-operations](https://wyrdwyn4.github.io/tags/vector-operations)
+- [/tags/complex-numbers](https://wyrdwyn4.github.io/tags/complex-numbers)
+- [/tags/matrices](https://wyrdwyn4.github.io/tags/matrices)
+- [/tags/determinants](https://wyrdwyn4.github.io/tags/determinants)
+- [/tags/linear-equations](https://wyrdwyn4.github.io/tags/linear-equations)
+- [/tags/dependent-sources](https://wyrdwyn4.github.io/tags/dependent-sources)
+- [/tags/wye-delta-transformation](https://wyrdwyn4.github.io/tags/wye-delta-transformation)
+- [/tags/bridge-circuits](https://wyrdwyn4.github.io/tags/bridge-circuits)
+- [/tags/transient-analysis](https://wyrdwyn4.github.io/tags/transient-analysis)
+- [/tags/phasor-diagrams](https://wyrdwyn4.github.io/tags/phasor-diagrams)
+- [/tags/sinusoidal-steady-state](https://wyrdwyn4.github.io/tags/sinusoidal-steady-state)
+- [/tags/complex-power](https://wyrdwyn4.github.io/tags/complex-power)
+- [/tags/maximum-power-transfer](https://wyrdwyn4.github.io/tags/maximum-power-transfer)
+- [/tags/object-oriented-programming](https://wyrdwyn4.github.io/tags/object-oriented-programming)
+- [/tags/c](https://wyrdwyn4.github.io/tags/c)
+- [/tags/abstraction](https://wyrdwyn4.github.io/tags/abstraction)
+- [/tags/contracts](https://wyrdwyn4.github.io/tags/contracts)
+- [/tags/standard-library](https://wyrdwyn4.github.io/tags/standard-library)
+- [/tags/programming-skills](https://wyrdwyn4.github.io/tags/programming-skills)
+- [/tags/debugging](https://wyrdwyn4.github.io/tags/debugging)
+- [/tags/digital-logic](https://wyrdwyn4.github.io/tags/digital-logic)
+- [/tags/boolean-algebra](https://wyrdwyn4.github.io/tags/boolean-algebra)
+- [/tags/combinational-circuits](https://wyrdwyn4.github.io/tags/combinational-circuits)
+- [/tags/flip-flops](https://wyrdwyn4.github.io/tags/flip-flops)
+- [/tags/state-machines](https://wyrdwyn4.github.io/tags/state-machines)
+- [/tags/decoders](https://wyrdwyn4.github.io/tags/decoders)
+- [/tags/multiplexors](https://wyrdwyn4.github.io/tags/multiplexors)
+- [/tags/alus](https://wyrdwyn4.github.io/tags/alus)
+- [/tags/digital-systems](https://wyrdwyn4.github.io/tags/digital-systems)
+- [/tags/engineering-professionalism](https://wyrdwyn4.github.io/tags/engineering-professionalism)
+- [/tags/workplace-ethics](https://wyrdwyn4.github.io/tags/workplace-ethics)
+- [/tags/communication](https://wyrdwyn4.github.io/tags/communication)
+- [/tags/information-literacy](https://wyrdwyn4.github.io/tags/information-literacy)
+- [/tags/diversity](https://wyrdwyn4.github.io/tags/diversity)
+- [/tags/equity](https://wyrdwyn4.github.io/tags/equity)
+- [/tags/occupational-health](https://wyrdwyn4.github.io/tags/occupational-health)
+- [/tags/writing-intensive](https://wyrdwyn4.github.io/tags/writing-intensive)
+- [/tags/engineering-mathematics](https://wyrdwyn4.github.io/tags/engineering-mathematics)
+- [/tags/differential-equations](https://wyrdwyn4.github.io/tags/differential-equations)
+- [/tags/laplace-transforms](https://wyrdwyn4.github.io/tags/laplace-transforms)
+- [/tags/series-convergence](https://wyrdwyn4.github.io/tags/series-convergence)
+- [/tags/fourier-series](https://wyrdwyn4.github.io/tags/fourier-series)
+- [/tags/partial-differentiation](https://wyrdwyn4.github.io/tags/partial-differentiation)
+- [/tags/physics-of-materials](https://wyrdwyn4.github.io/tags/physics-of-materials)
+- [/tags/semiconductors](https://wyrdwyn4.github.io/tags/semiconductors)
+- [/tags/quantum-mechanics](https://wyrdwyn4.github.io/tags/quantum-mechanics)
+- [/tags/charge-carriers](https://wyrdwyn4.github.io/tags/charge-carriers)
+- [/tags/pn-junctions](https://wyrdwyn4.github.io/tags/pn-junctions)
+- [/tags/mosfets](https://wyrdwyn4.github.io/tags/mosfets)
+- [/tags/photovoltaic-devices](https://wyrdwyn4.github.io/tags/photovoltaic-devices)
+- [/tags/leds](https://wyrdwyn4.github.io/tags/leds)
+- [/tags/lasers](https://wyrdwyn4.github.io/tags/lasers)
+- [/tags/sustainable-society](https://wyrdwyn4.github.io/tags/sustainable-society)
+- [/tags/international-development](https://wyrdwyn4.github.io/tags/international-development)
+- [/tags/multidisciplinary-planning](https://wyrdwyn4.github.io/tags/multidisciplinary-planning)
+- [/tags/technology-and-society](https://wyrdwyn4.github.io/tags/technology-and-society)
+- [/tags/development-projects](https://wyrdwyn4.github.io/tags/development-projects)
+- [/tags/discrete-mathematics](https://wyrdwyn4.github.io/tags/discrete-mathematics)
+- [/tags/propositional-logic](https://wyrdwyn4.github.io/tags/propositional-logic)
+- [/tags/predicate-logic](https://wyrdwyn4.github.io/tags/predicate-logic)
+- [/tags/mathematical-reasoning](https://wyrdwyn4.github.io/tags/mathematical-reasoning)
+- [/tags/graphs](https://wyrdwyn4.github.io/tags/graphs)
+- [/tags/trees](https://wyrdwyn4.github.io/tags/trees)
+- [/tags/models-of-computation](https://wyrdwyn4.github.io/tags/models-of-computation)
+- [/tags/electronic-circuits](https://wyrdwyn4.github.io/tags/electronic-circuits)
+- [/tags/semiconductor-devices](https://wyrdwyn4.github.io/tags/semiconductor-devices)
+- [/tags/transistors](https://wyrdwyn4.github.io/tags/transistors)
+- [/tags/amplifiers](https://wyrdwyn4.github.io/tags/amplifiers)
+- [/tags/miller-s-theorem](https://wyrdwyn4.github.io/tags/miller-s-theorem)
+- [/tags/digital-electronics](https://wyrdwyn4.github.io/tags/digital-electronics)
+- [/tags/cad-tools](https://wyrdwyn4.github.io/tags/cad-tools)
+- [/tags/data-structures](https://wyrdwyn4.github.io/tags/data-structures)
+- [/tags/recursive-structures](https://wyrdwyn4.github.io/tags/recursive-structures)
+- [/tags/generic-programming](https://wyrdwyn4.github.io/tags/generic-programming)
+- [/tags/modularity](https://wyrdwyn4.github.io/tags/modularity)
+- [/tags/time-complexity](https://wyrdwyn4.github.io/tags/time-complexity)
+- [/tags/procedural-abstraction](https://wyrdwyn4.github.io/tags/procedural-abstraction)
+- [/tags/data-abstraction](https://wyrdwyn4.github.io/tags/data-abstraction)
+- [/tags/microprocessors](https://wyrdwyn4.github.io/tags/microprocessors)
+- [/tags/assembly-language](https://wyrdwyn4.github.io/tags/assembly-language)
+- [/tags/addressing-modes](https://wyrdwyn4.github.io/tags/addressing-modes)
+- [/tags/memory-mapped-devices](https://wyrdwyn4.github.io/tags/memory-mapped-devices)
+- [/tags/interfacing-techniques](https://wyrdwyn4.github.io/tags/interfacing-techniques)
+- [/tags/analog-i-o](https://wyrdwyn4.github.io/tags/analog-i-o)
+- [/tags/computer-displays](https://wyrdwyn4.github.io/tags/computer-displays)
+- [/tags/systems](https://wyrdwyn4.github.io/tags/systems)
+- [/tags/signals](https://wyrdwyn4.github.io/tags/signals)
+- [/tags/linear-superposition](https://wyrdwyn4.github.io/tags/linear-superposition)
+- [/tags/delta-function](https://wyrdwyn4.github.io/tags/delta-function)
+- [/tags/fourier-transform](https://wyrdwyn4.github.io/tags/fourier-transform)
+- [/tags/laplace-transform](https://wyrdwyn4.github.io/tags/laplace-transform)
+- [/tags/convolution](https://wyrdwyn4.github.io/tags/convolution)
+- [/tags/transfer-functions](https://wyrdwyn4.github.io/tags/transfer-functions)
+- [/tags/sociology](https://wyrdwyn4.github.io/tags/sociology)
+- [/tags/concepts-of-sociology](https://wyrdwyn4.github.io/tags/concepts-of-sociology)
+- [/tags/principles-of-sociology](https://wyrdwyn4.github.io/tags/principles-of-sociology)
+- [/tags/introduction-to-sociology](https://wyrdwyn4.github.io/tags/introduction-to-sociology)
+- [/tags/software-design](https://wyrdwyn4.github.io/tags/software-design)
+- [/tags/unified-modelling-language](https://wyrdwyn4.github.io/tags/unified-modelling-language)
+- [/tags/design-patterns](https://wyrdwyn4.github.io/tags/design-patterns)
+- [/tags/object-oriented-design](https://wyrdwyn4.github.io/tags/object-oriented-design)
+- [/tags/modular-decomposition](https://wyrdwyn4.github.io/tags/modular-decomposition)
+- [/tags/design-documentation](https://wyrdwyn4.github.io/tags/design-documentation)
+- [/tags/probability](https://wyrdwyn4.github.io/tags/probability)
+- [/tags/random-processes](https://wyrdwyn4.github.io/tags/random-processes)
+- [/tags/random-variables](https://wyrdwyn4.github.io/tags/random-variables)
+- [/tags/descriptive-statistics](https://wyrdwyn4.github.io/tags/descriptive-statistics)
+- [/tags/engineering-applications](https://wyrdwyn4.github.io/tags/engineering-applications)
+- [/tags/control-systems](https://wyrdwyn4.github.io/tags/control-systems)
+- [/tags/negative-feedback](https://wyrdwyn4.github.io/tags/negative-feedback)
+- [/tags/root-locus](https://wyrdwyn4.github.io/tags/root-locus)
+- [/tags/frequency-response](https://wyrdwyn4.github.io/tags/frequency-response)
+- [/tags/pid-controllers](https://wyrdwyn4.github.io/tags/pid-controllers)
+- [/tags/stability-analysis](https://wyrdwyn4.github.io/tags/stability-analysis)
+- [/tags/compensator-design](https://wyrdwyn4.github.io/tags/compensator-design)
+- [/tags/algorithms](https://wyrdwyn4.github.io/tags/algorithms)
+- [/tags/correctness](https://wyrdwyn4.github.io/tags/correctness)
+- [/tags/complexity](https://wyrdwyn4.github.io/tags/complexity)
+- [/tags/verification](https://wyrdwyn4.github.io/tags/verification)
+- [/tags/divide-and-conquer](https://wyrdwyn4.github.io/tags/divide-and-conquer)
+- [/tags/dynamic-programming](https://wyrdwyn4.github.io/tags/dynamic-programming)
+- [/tags/computational-tractability](https://wyrdwyn4.github.io/tags/computational-tractability)
+- [/tags/pld](https://wyrdwyn4.github.io/tags/pld)
+- [/tags/fpga](https://wyrdwyn4.github.io/tags/fpga)
+- [/tags/asic](https://wyrdwyn4.github.io/tags/asic)
+- [/tags/system-design](https://wyrdwyn4.github.io/tags/system-design)
+- [/tags/digital-system-testing](https://wyrdwyn4.github.io/tags/digital-system-testing)
+- [/tags/triptailor](https://wyrdwyn4.github.io/tags/triptailor)
+- [/tags/microservices](https://wyrdwyn4.github.io/tags/microservices)
+- [/tags/golang](https://wyrdwyn4.github.io/tags/golang)
+- [/tags/react-js](https://wyrdwyn4.github.io/tags/react-js)
+- [/tags/postgresql](https://wyrdwyn4.github.io/tags/postgresql)
+- [/tags/gin](https://wyrdwyn4.github.io/tags/gin)
+- [/tags/docker](https://wyrdwyn4.github.io/tags/docker)
+- [/tags/jwt-authorization](https://wyrdwyn4.github.io/tags/jwt-authorization)
+- [/tags/engineering-economics](https://wyrdwyn4.github.io/tags/engineering-economics)
+- [/tags/time-value-of-money](https://wyrdwyn4.github.io/tags/time-value-of-money)
+- [/tags/interest-rates](https://wyrdwyn4.github.io/tags/interest-rates)
+- [/tags/depreciation](https://wyrdwyn4.github.io/tags/depreciation)
+- [/tags/cost-benefit-analysis](https://wyrdwyn4.github.io/tags/cost-benefit-analysis)
+- [/tags/economic-risk](https://wyrdwyn4.github.io/tags/economic-risk)
+- [/tags/optimization](https://wyrdwyn4.github.io/tags/optimization)
+- [/tags/data-mining](https://wyrdwyn4.github.io/tags/data-mining)
+- [/tags/knowledge-discovery](https://wyrdwyn4.github.io/tags/knowledge-discovery)
+- [/tags/data-mining-techniques](https://wyrdwyn4.github.io/tags/data-mining-techniques)
+- [/tags/data-mining-applications](https://wyrdwyn4.github.io/tags/data-mining-applications)
+- [/tags/software-development](https://wyrdwyn4.github.io/tags/software-development)
+- [/tags/agile-processes](https://wyrdwyn4.github.io/tags/agile-processes)
+- [/tags/project-management](https://wyrdwyn4.github.io/tags/project-management)
+- [/tags/architectural-design](https://wyrdwyn4.github.io/tags/architectural-design)
+- [/tags/static-analysis](https://wyrdwyn4.github.io/tags/static-analysis)
+- [/tags/formal-verification](https://wyrdwyn4.github.io/tags/formal-verification)
+- [/tags/testing](https://wyrdwyn4.github.io/tags/testing)
+- [/tags/computer-architecture](https://wyrdwyn4.github.io/tags/computer-architecture)
+- [/tags/memory-hierarchy](https://wyrdwyn4.github.io/tags/memory-hierarchy)
+- [/tags/pipelining](https://wyrdwyn4.github.io/tags/pipelining)
+- [/tags/instruction-set-architecture](https://wyrdwyn4.github.io/tags/instruction-set-architecture)
+- [/tags/parallelism](https://wyrdwyn4.github.io/tags/parallelism)
+- [/tags/multiprocessors](https://wyrdwyn4.github.io/tags/multiprocessors)
+- [/tags/communication-principles](https://wyrdwyn4.github.io/tags/communication-principles)
+- [/tags/signal-transmission](https://wyrdwyn4.github.io/tags/signal-transmission)
+- [/tags/analog-modulation](https://wyrdwyn4.github.io/tags/analog-modulation)
+- [/tags/sampling-theorem](https://wyrdwyn4.github.io/tags/sampling-theorem)
+- [/tags/pam](https://wyrdwyn4.github.io/tags/pam)
+- [/tags/pcm](https://wyrdwyn4.github.io/tags/pcm)
+- [/tags/delta-modulation](https://wyrdwyn4.github.io/tags/delta-modulation)
+- [/tags/communication-networks](https://wyrdwyn4.github.io/tags/communication-networks)
+- [/tags/circuit-switching](https://wyrdwyn4.github.io/tags/circuit-switching)
+- [/tags/packet-switching](https://wyrdwyn4.github.io/tags/packet-switching)
+- [/tags/network-protocols](https://wyrdwyn4.github.io/tags/network-protocols)
+- [/tags/layered-architecture](https://wyrdwyn4.github.io/tags/layered-architecture)
+- [/tags/local-area-networks](https://wyrdwyn4.github.io/tags/local-area-networks)
+- [/tags/internetworking](https://wyrdwyn4.github.io/tags/internetworking)
+- [/tags/team](https://wyrdwyn4.github.io/tags/team)
+- [/tags/about](https://wyrdwyn4.github.io/tags/about)
+- [/tags/ece](https://wyrdwyn4.github.io/tags/ece)
+- [/tags/course](https://wyrdwyn4.github.io/tags/course)
+
+- [/categories/blogging](https://wyrdwyn4.github.io/categories/blogging)
+- [/categories/demo](https://wyrdwyn4.github.io/categories/demo)
+- [/categories/tutorial](https://wyrdwyn4.github.io/categories/tutorial)
+- [/categories/studies](https://wyrdwyn4.github.io/categories/studies)
+- [/categories/courses](https://wyrdwyn4.github.io/categories/courses)
+- [/categories/engineering-one](https://wyrdwyn4.github.io/categories/engineering-one)
+- [/categories/term-3](https://wyrdwyn4.github.io/categories/term-3)
+- [/categories/elective-courses](https://wyrdwyn4.github.io/categories/elective-courses)
+- [/categories/term-4](https://wyrdwyn4.github.io/categories/term-4)
+- [/categories/term-5](https://wyrdwyn4.github.io/categories/term-5)
+- [/categories/projects](https://wyrdwyn4.github.io/categories/projects)
+- [/categories/spenditure](https://wyrdwyn4.github.io/categories/spenditure)
+- [/categories/term-6](https://wyrdwyn4.github.io/categories/term-6)
+- [/categories/triptailor](https://wyrdwyn4.github.io/categories/triptailor)
+- [/categories/valiant-aerotech](https://wyrdwyn4.github.io/categories/valiant-aerotech)
+- [/categories/mission-planner](https://wyrdwyn4.github.io/categories/mission-planner)
+- [/categories/crem](https://wyrdwyn4.github.io/categories/crem)
+
+- [/assets/public/docs/projects/spenditure/Spenditure%20-%20Design%20Report.pdf](https://wyrdwyn4.github.io/assets/public/docs/projects/spenditure/Spenditure%20-%20Design%20Report.pdf)
+- [/assets/public/docs/projects/triptailor/Final%20Group%20Report%20-%20TripTailor.pdf](https://wyrdwyn4.github.io/assets/public/docs/projects/triptailor/Final%20Group%20Report%20-%20TripTailor.pdf)
