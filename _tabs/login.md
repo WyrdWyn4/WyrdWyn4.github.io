@@ -67,6 +67,7 @@ order: 5
 
       document.addEventListener("DOMContentLoaded", initializeAuth0);
     </script>
+    
     <style>
       h1 {
         color: #7D7D7D;
@@ -115,19 +116,6 @@ order: 5
     </div>
   </body>
 </html>
-
-<style>
-  .dark-mode .login-container i,
-  .dark-mode .login-container h1,
-  .dark-mode .login-container p {
-    color: white;
-  }
-  .light-mode .login-container i,
-  .light-mode .login-container h1,
-  .light-mode .login-container p {
-    color: black;
-  }
-</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
