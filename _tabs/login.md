@@ -67,7 +67,7 @@ order: 5
 
       document.addEventListener("DOMContentLoaded", initializeAuth0);
     </script>
-    
+
     <style>
       h1 {
         color: #7D7D7D;
@@ -146,5 +146,5 @@ order: 5
 
 <br><br><br><br><br>
 
-> Access to some resources are restricted. Please request [The Administrator](http://127.0.0.1:4000/about/) for access.
+> Access to some resources are restricted. Please request [The Administrator](/about/) for access.
 {: .prompt-tip }

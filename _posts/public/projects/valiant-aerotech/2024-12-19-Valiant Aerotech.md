@@ -5,9 +5,9 @@ description: "Valiant Aerotech is an aerospace engineering student design team a
 categories: [Projects, Valiant Aerotech]
 tags: [team, about]
 comments: true
-image: assets/public/img/covers/valiant-aerotech/valiant-aerotech-cover.png
+image: assets/public/img/covers/projects/valiant-aerotech/valiant-aerotech-cover.png
 author: wmksherwani
-permalink: /valiant-aerotech
+permalink: /projects/valiant-aerotech
 hidden: false
 ---
 
@@ -89,54 +89,61 @@ Our team consists of students from diverse backgrounds, including mechanical, el
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Fayad Khan</p>
         </a>
     </div>
-    <div style="text-align: center;">
+    <!-- <div style="text-align: center;">
         <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
         <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
         </a>
-    </div>
+    </div> -->
 </div>
 
 ### Software Team
 <div style="display: flex; justify-content: space-around;">
     <div>
         <img src="assets/public/img/people/Ahmad Hajahmad.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Senior Member</p>
+        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Software Co Lead</p>
         <a href="https://www.linkedin.com/in/aahajahmad/" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Ahmad Hajahmad</p>
         </a>
     </div>
     <div style="text-align: center;">
         <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="font-weight: bold; margin-bottom: 0;">Senior Member</p>
-        <a href="https://www.linkedin.com/in/zayd-loya/" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Zayd Loya</p>
+        <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
+        <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Rohan</p>
         </a>
     </div>
     <div style="text-align: center;">
+        <img src="assets/public/img/people/Anderson Bath.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
+        <a href="www.linkedin.com/in/anderson-bath" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Anderson Bath</p>
+        </a>
+    </div>
+    <!-- <div style="text-align: center;">
         <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
         <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
         </a>
-    </div>
-    <div style="text-align: center;">
-        <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
-        </a>
-    </div>
+    </div> -->
 </div>
 
 ### Electrical Team
 <div style="display: flex; justify-content: space-around;">
     <div>
         <img src="assets/public/img/people/Amjed Awadelkarim.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Senior Member</p>
-        <a href="https://www.linkedin.com/in/amjed" target="_blank">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Electrical Co Lead</p>
+        <a href="https://www.linkedin.com/in/amjed-awadelkarim/" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Amjed Awadelkarim</p>
+        </a>
+    </div>
+    <div>
+        <img src="assets/public/img/people/Brynn Furlong.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Junior Member</p>
+        <a href="https://www.linkedin.com/in/brynn-furlong-803a90301/" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Brynn Furlong</p>
         </a>
     </div>
     <div style="text-align: center;">
@@ -146,20 +153,13 @@ Our team consists of students from diverse backgrounds, including mechanical, el
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Abdul Rafey Khan</p>
         </a>
     </div>
-    <div>
-        <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="https://www.linkedin.com/in/sifeldin-elabasy-a7004323a/" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
-        </a>
-    </div>
-    <div style="text-align: center;">
+    <!-- <div style="text-align: center;">
         <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
+        <a href="https://ca.linkedin.com/in/manaswee-saha-120099298" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Manaswee Saha</p>
         </a>
-    </div>
+    </div> -->
 </div>
 
 <!-- ## What We Do

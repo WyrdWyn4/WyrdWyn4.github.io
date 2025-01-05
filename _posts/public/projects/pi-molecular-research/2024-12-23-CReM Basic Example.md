@@ -5,9 +5,9 @@ description: This is an example of how to use the CReM framework to generate che
 categories: [Projects, CReM]
 tags: [team, about]
 comments: true
-image: assets/public/img/covers/crem/crem-basic-example-cover.png
+image: assets/public/img/covers/projects/crem/crem-basic-example-cover.png
 author: wmksherwani
-permalink: /crem/basic-example
+permalink: /projects/crem/basic-example
 hidden: false
 ---
 
