@@ -191,13 +191,8 @@ script_includes:
 </html>
 
 <style>
-  #content-wrapper {
-    filter: blur(10px);
-    transition: filter 0.5s ease-out;
-  }
-
-  #content-wrapper.unblurred {
-    filter: blur(0px);
+  #main-wrapper {
+    visibility: hidden;
   }
 </style>
 
@@ -337,10 +332,12 @@ script_includes:
     console.log("Applying blur effect to #main-wrapper.");
     mainWrapper.style.filter = "blur(10px)";
     mainWrapper.style.transition = "filter 0.5s ease-out";
+    mainWrapper.style.visibility = "hidden";
 
     setTimeout(() => {
       console.log("Applying unblur effect to #main-wrapper.");
       mainWrapper.style.filter = "blur(0px)";
+      mainWrapper.style.visibility = "visible";
     }, 1000);
   }
 </script>
