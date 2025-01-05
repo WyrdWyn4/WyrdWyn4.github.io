@@ -190,6 +190,17 @@ script_includes:
   </head>
 </html>
 
+<style>
+  #content-wrapper {
+    filter: blur(10px);
+    transition: filter 0.5s ease-out;
+  }
+
+  #content-wrapper.unblurred {
+    filter: blur(0px);
+  }
+</style>
+
 <script>
   function loadAuth0Script() {
     console.log("Loading Auth0 script...");
@@ -317,14 +328,19 @@ script_includes:
   function initializeBlurAnimation() {
     console.log("Initializing unlock animation...");
 
-    console.log("Applying blur effect to the body.");
-    document.body.style.filter = "blur(10px)";
-    document.body.style.transition = "filter 0.5s ease-out";
+    const mainWrapper = document.getElementById("main-wrapper");
+    if (!mainWrapper) {
+      console.error("Main wrapper element not found.");
+      return;
+    }
+
+    console.log("Applying blur effect to #main-wrapper.");
+    mainWrapper.style.filter = "blur(10px)";
+    mainWrapper.style.transition = "filter 0.5s ease-out";
 
     setTimeout(() => {
-      console.log("Applying unblur effect to the body.");
-      document.body.style.filter = "blur(0px)";
-      document.body.style.transition = "filter 0.5s ease-out";
+      console.log("Applying unblur effect to #main-wrapper.");
+      mainWrapper.style.filter = "blur(0px)";
     }, 1000);
   }
 </script>
