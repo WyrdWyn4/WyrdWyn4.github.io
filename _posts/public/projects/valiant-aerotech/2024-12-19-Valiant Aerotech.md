@@ -28,7 +28,7 @@ Our team consists of students from diverse backgrounds, including mechanical, el
     <div>
         <img src="assets/public/img/people/Mohammed Awad.png" alt="Design Lead" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <p style="text-align: center;font-weight: bold; margin-bottom: 0;">President</p>
-        <a href="https://www.linkedin.com/in/mohammed" target="_blank">
+        <a href="https://www.linkedin.com/in/mohammad-mamoun-awad/" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Mohammed Awad</p>
         </a>
     </div>
@@ -108,9 +108,9 @@ Our team consists of students from diverse backgrounds, including mechanical, el
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
+        <img src="assets/public/img/people/Rohan Torul.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="font-weight: bold; margin-bottom: 0;">Senior Member</p>
+        <a href="https://www.linkedin.com/in/rohan-k-torul/" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Rohan</p>
         </a>
     </div>
@@ -193,7 +193,7 @@ Stay updated with our latest projects and achievements by following us on social
 - [Facebook](http://www.facebook.com/valiantaerotech)
 - [Twitter](http://www.twitter.com/valiantaerotech)
 - [Instagram](http://www.instagram.com/valiantaerotech)
-- [LinkedIn](http://www.linkedin.com/company/valiantaerotech)
+- [LinkedIn](https://www.linkedin.com/company/valiant-aerotech/)
 
 Thank you for your support!
 
