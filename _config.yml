@@ -212,6 +212,13 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
+  - "_posts/public/studies/courses/Engineering One"
+  - "_posts/public/studies/courses/Term 3"
+  - "_posts/public/studies/courses/Term 4"
+  - "_posts/public/studies/courses/Term 5"
+  - "_posts/public/studies/courses/Term 6"
+  - "_posts/public/studies/courses/Term 7"
+  - "_posts/public/studies/courses/Term 8"
 
 jekyll-archives:
   enabled: [categories, tags]
