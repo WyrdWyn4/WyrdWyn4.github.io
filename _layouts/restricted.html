@@ -641,46 +641,6 @@ script_includes:
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const tocPopup = document.getElementById("toc-popup");
-    const tocTriggerButton = document.querySelector(".toc-trigger.btn.me-1");
-    const tocCloseButton = document.getElementById("toc-popup-close");
-
-    if (!tocPopup || !tocTriggerButton) {
-      console.warn("TOC popup or trigger button not found.");
-      return;
-    }
-
-    const lockBackground = (lock) => {
-      if (lock) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "";
-      }
-    };
-
-    tocTriggerButton.addEventListener("click", () => {
-      tocPopup.showModal();
-      lockBackground(true);
-    });
-
-    if (tocCloseButton) {
-      tocCloseButton.addEventListener("click", () => {
-        tocPopup.close();
-        lockBackground(false);
-      });
-    }
-
-    tocPopup.addEventListener("click", (event) => {
-      if (event.target === tocPopup) {
-        tocPopup.close();
-        lockBackground(false);
-      }
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const tocPopup = document.getElementById("toc-popup");
     const tocTriggerButtonPrimary = document.querySelector(
       ".toc-trigger.btn.me-1"
     );
@@ -694,19 +654,28 @@ script_includes:
       return;
     }
 
-    const lockBackground = (lock) => {
-      if (lock) {
-        document.body.style.overflow = "hidden";
+    // Lock and unlock background
+    const lockBackground = () => {
+      if (tocPopup.open) {
+        document.body.style.overflow = "hidden"; // Lock the background
       } else {
-        document.body.style.overflow = "";
+        document.body.style.overflow = ""; // Unlock the background
       }
     };
 
+    // Open the TOC popup
     const openTocPopup = () => {
       tocPopup.showModal();
-      lockBackground(true);
+      lockBackground(); // Ensure background is locked
     };
 
+    // Close the TOC popup
+    const closeTocPopup = () => {
+      tocPopup.close();
+      lockBackground(); // Ensure background is unlocked
+    };
+
+    // Add event listeners to trigger buttons
     if (tocTriggerButtonPrimary) {
       tocTriggerButtonPrimary.addEventListener("click", openTocPopup);
     }
@@ -715,18 +684,20 @@ script_includes:
       tocTriggerButtonSecondary.addEventListener("click", openTocPopup);
     }
 
+    // Add event listener to close button
     if (tocCloseButton) {
-      tocCloseButton.addEventListener("click", () => {
-        tocPopup.close();
-        lockBackground(false);
-      });
+      tocCloseButton.addEventListener("click", closeTocPopup);
     }
 
+    // Close the popup when clicking outside the content
     tocPopup.addEventListener("click", (event) => {
       if (event.target === tocPopup) {
-        tocPopup.close();
-        lockBackground(false);
+        closeTocPopup();
       }
     });
+
+    // Monitor the dialog's state and adjust background lock accordingly
+    tocPopup.addEventListener("close", lockBackground);
+    tocPopup.addEventListener("cancel", lockBackground); // For ESC key handling
   });
 </script>
