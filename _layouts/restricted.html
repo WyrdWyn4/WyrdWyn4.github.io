@@ -355,16 +355,14 @@ script_includes:
 
     const excludedHeadings = ["Recently Updated", "Trending Tags", "Contents"];
 
-    let currentLevel2 = null; // Tracks current `<h2>` group
+    let currentLevel2 = null;
     const tocItems = [];
 
-    // Build the TOC
     headings.forEach((heading, index) => {
       if (excludedHeadings.includes(heading.textContent.trim())) {
         return;
       }
 
-      // Ensure each heading has a unique ID
       if (!heading.id) {
         heading.id = `heading-${index}`;
       }
@@ -384,35 +382,27 @@ script_includes:
     `;
 
       if (level === "H2") {
-        // Start a new top-level section
         if (currentLevel2) {
-          tocItems.push(`${currentLevel2}</ul></li>`); // Close previous <h2> section
+          tocItems.push(`${currentLevel2}</ul></li>`);
         }
         currentLevel2 = `<li class="toc-list-item">
         <a href="#${heading.id}" class="toc-link node-name--${level}">${heading.textContent}</a>
         <ul class="toc-list is-collapsible is-collapsed">
       `;
       } else if (level === "H3" && currentLevel2) {
-        // Append `<h3>` to the current `<h2>` group
         currentLevel2 += listItem;
-      } else if (level === "H1") {
-        // Add H1 as a standalone item if needed
-        //tocItems.push(listItem);
       }
     });
 
-    // Add any remaining open group
     if (currentLevel2) {
       tocItems.push(`${currentLevel2}</ul></li>`);
     }
 
-    // Populate the TOC
     toc.innerHTML = `<ul class="toc-list">${tocItems.join("")}</ul>`;
     tocWrapper.classList.remove("invisible");
 
     const tocLinks = document.querySelectorAll(".toc-link");
 
-    // Highlight and uncollapse the active section
     const highlightAndUncollapse = (activeId) => {
       tocLinks.forEach((link) => {
         const parentListItem = link.closest(".toc-list-item");
@@ -423,14 +413,12 @@ script_includes:
         if (link.getAttribute("href") === `#${activeId}`) {
           link.classList.add("is-active-link");
 
-          // Uncollapse the associated section if it's an H2
           if (sublist) {
             sublist.classList.remove("is-collapsed");
           }
         } else {
           link.classList.remove("is-active-link");
 
-          // Only collapse non-active H2 sections
           if (sublist && link.classList.contains("node-name--H2")) {
             sublist.classList.add("is-collapsed");
           }
@@ -438,45 +426,38 @@ script_includes:
       });
     };
 
-    // Intersection Observer to detect the heading at the top of the viewport
     const observer = new IntersectionObserver(
       (entries) => {
-        // Filter entries for headings that are in view
         const visibleEntries = entries.filter((entry) => entry.isIntersecting);
 
         if (visibleEntries.length > 0) {
-          // Find the topmost visible heading
           const topEntry = visibleEntries.sort(
             (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
           )[0];
 
           const activeId = topEntry.target.id;
 
-          // Ensure only headings in the same section are considered
           if (topEntry.target.tagName === "H2") {
             highlightAndUncollapse(activeId);
           }
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the heading is visible
-        rootMargin: "0px 0px -90% 0px" // Focus on the heading closest to the top
+        threshold: 0.1,
+        rootMargin: "0px 0px -90% 0px"
       }
     );
 
-    // Observe all headings
     document
       .querySelectorAll("h1, h2, h3")
       .forEach((heading) => observer.observe(heading));
 
-    // Handle click events on TOC links
     toc.addEventListener("click", (event) => {
       const target = event.target;
 
       if (target.classList.contains("toc-link")) {
         event.preventDefault();
 
-        // Scroll to the target section
         const targetId = target.getAttribute("href").substring(1);
         const section = document.getElementById(targetId);
         section?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -484,13 +465,11 @@ script_includes:
         const level = target.classList.contains("node-name--H2") ? "H2" : "H3";
 
         if (level === "H2") {
-          // Collapse all sibling H2 sections
           const allTocLists = document.querySelectorAll(
             ".toc-list.is-collapsible"
           );
           allTocLists.forEach((list) => list.classList.add("is-collapsed"));
 
-          // Uncollapse the clicked H2 section
           const parentListItem = target.closest(".toc-list-item");
           const sublist = parentListItem?.querySelector(
             ".toc-list.is-collapsible"
@@ -499,7 +478,6 @@ script_includes:
             sublist.classList.remove("is-collapsed");
           }
         } else if (level === "H3") {
-          // Only highlight the clicked H3 link
           tocLinks.forEach((link) => link.classList.remove("is-active-link"));
           target.classList.add("is-active-link");
         }
@@ -529,15 +507,13 @@ script_includes:
 
     const excludedHeadings = ["Recently Updated", "Trending Tags", "Contents"];
     const tocItems = [];
-    let currentLevel2 = null; // Tracks the current `<h2>` section
+    let currentLevel2 = null;
 
-    // Build the TOC structure
     headings.forEach((heading, index) => {
       if (excludedHeadings.includes(heading.textContent.trim())) {
         return;
       }
 
-      // Ensure each heading has a unique ID
       if (!heading.id) {
         heading.id = `heading-${index}`;
       }
@@ -552,49 +528,40 @@ script_includes:
     `;
 
       if (level === "H2") {
-        // Close previous `<h2>` section if exists
         if (currentLevel2) {
           tocItems.push(`${currentLevel2}</ul></li>`);
         }
-        // Start a new `<h2>` section
         currentLevel2 = `<li class="toc-list-item">
         <a href="#${heading.id}" class="toc-link node-name--${level}">${heading.textContent}</a>
         <ul class="toc-list">
       `;
       } else if (level === "H3" && currentLevel2) {
-        // Append `<h3>` to the current `<h2>` group
         currentLevel2 += listItem;
       }
     });
 
-    // Add the remaining open `<h2>` section
     if (currentLevel2) {
       tocItems.push(`${currentLevel2}</ul></li>`);
     }
 
-    // Insert the TOC structure into the dialog
     tocContent.innerHTML = `<ul class="toc-list">${tocItems.join("")}</ul>`;
 
-    // Close Button Functionality
     tocCloseButton.addEventListener("click", () => {
       tocPopup.close();
     });
 
-    // Optional: Handle TOC popup opening
     document
       .getElementById("toc-open-button")
       ?.addEventListener("click", () => {
         tocPopup.showModal();
       });
 
-    // Handle Click Events in the TOC
     tocContent.addEventListener("click", (event) => {
       const target = event.target;
 
       if (target.classList.contains("toc-link")) {
         event.preventDefault();
 
-        // Scroll to the selected section
         const targetId = target.getAttribute("href").substring(1);
         const section = document.getElementById(targetId);
 
@@ -602,7 +569,6 @@ script_includes:
           section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
 
-        // Close the popup after selection (optional)
         tocPopup.close();
       }
     });
@@ -634,20 +600,17 @@ script_includes:
       return;
     }
 
-    // Ensure the TOC bar starts as invisible
     tocBar.classList.add("invisible");
 
-    // Function to check if the TOC bar is at the top of the viewport
     const checkTocBarPosition = () => {
       const rect = tocBar.getBoundingClientRect();
       if (rect.top <= 0) {
-        tocBar.classList.remove("invisible"); // Visible when at the top
+        tocBar.classList.remove("invisible");
       } else {
-        tocBar.classList.add("invisible"); // Invisible otherwise
+        tocBar.classList.add("invisible");
       }
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", checkTocBarPosition);
   });
 </script>
@@ -662,16 +625,14 @@ script_includes:
       return;
     }
 
-    // Add click event listener to the trigger button
     tocTriggerButton.addEventListener("click", () => {
-      tocPopup.showModal(); // Opens the dialog
+      tocPopup.showModal();
     });
 
-    // Add functionality to close the popup when clicking the close button
     const tocCloseButton = document.getElementById("toc-popup-close");
     if (tocCloseButton) {
       tocCloseButton.addEventListener("click", () => {
-        tocPopup.close(); // Closes the dialog
+        tocPopup.close();
       });
     }
   });
@@ -688,22 +649,19 @@ script_includes:
       return;
     }
 
-    // Lock the background by adding a class to the body
     const lockBackground = (lock) => {
       if (lock) {
-        document.body.style.overflow = "hidden"; // Disable scrolling
+        document.body.style.overflow = "hidden";
       } else {
-        document.body.style.overflow = ""; // Restore scrolling
+        document.body.style.overflow = "";
       }
     };
 
-    // Open the TOC popup and lock the background
     tocTriggerButton.addEventListener("click", () => {
       tocPopup.showModal();
       lockBackground(true);
     });
 
-    // Close the TOC popup and unlock the background
     if (tocCloseButton) {
       tocCloseButton.addEventListener("click", () => {
         tocPopup.close();
@@ -711,7 +669,59 @@ script_includes:
       });
     }
 
-    // Optional: Close the popup if the user clicks outside the dialog content
+    tocPopup.addEventListener("click", (event) => {
+      if (event.target === tocPopup) {
+        tocPopup.close();
+        lockBackground(false);
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tocPopup = document.getElementById("toc-popup");
+    const tocTriggerButtonPrimary = document.querySelector(
+      ".toc-trigger.btn.me-1"
+    );
+    const tocTriggerButtonSecondary = document.querySelector(
+      ".toc-trigger.btn.btn-outline-secondary.btn-sm"
+    );
+    const tocCloseButton = document.getElementById("toc-popup-close");
+
+    if (!tocPopup || (!tocTriggerButtonPrimary && !tocTriggerButtonSecondary)) {
+      console.warn("TOC popup or trigger buttons not found.");
+      return;
+    }
+
+    const lockBackground = (lock) => {
+      if (lock) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    };
+
+    const openTocPopup = () => {
+      tocPopup.showModal();
+      lockBackground(true);
+    };
+
+    if (tocTriggerButtonPrimary) {
+      tocTriggerButtonPrimary.addEventListener("click", openTocPopup);
+    }
+
+    if (tocTriggerButtonSecondary) {
+      tocTriggerButtonSecondary.addEventListener("click", openTocPopup);
+    }
+
+    if (tocCloseButton) {
+      tocCloseButton.addEventListener("click", () => {
+        tocPopup.close();
+        lockBackground(false);
+      });
+    }
+
     tocPopup.addEventListener("click", (event) => {
       if (event.target === tocPopup) {
         tocPopup.close();
