@@ -251,7 +251,7 @@ script_includes:
       const auth = new auth0.WebAuth({
         domain: "wyrdwyn4.ca.auth0.com",
         clientID: "hRGbOJutwauypUmF8Wsg702DC3Dfi8UT",
-        redirectUri: "https://wyrdwyn4.github.io/",
+        redirectUri: "http://127.0.0.1:4000/",
         responseType: "token id_token",
         scope: "openid profile email"
       });
@@ -276,7 +276,7 @@ script_includes:
       console.error("Error initializing Auth0:", error);
       localStorage.clear();
       window.location.href =
-        "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/login/";
+        "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=http://127.0.0.1:4000/login/";
     }
   }
 
@@ -287,7 +287,7 @@ script_includes:
         console.log("Session not found or error:", err);
         localStorage.clear();
         window.location.href =
-          "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=https://wyrdwyn4.github.io/login/";
+          "https://wyrdwyn4.ca.auth0.com/v2/logout?client_id=hRGbOJutwauypUmF8Wsg702DC3Dfi8UT&returnTo=http://127.0.0.1:4000/login/";
         return;
       }
 
