@@ -108,27 +108,39 @@ Our team consists of students from diverse backgrounds, including mechanical, el
         </a>
     </div>
     <div style="text-align: center;">
-        <img src="assets/public/img/people/Rohan Torul.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="font-weight: bold; margin-bottom: 0;">Senior Member</p>
-        <a href="https://www.linkedin.com/in/rohan-k-torul/" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Rohan</p>
+        <img src="assets/public/img/people/Léo Gilbert.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Senior Member</p>
+        <a href="https://github.com/Leo-Gilbert" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Léo Gilbert</p>
         </a>
     </div>
     <div style="text-align: center;">
+        <img src="assets/public/img/people/Rohan Torul.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="font-weight: bold; margin-bottom: 0;">Senior Member</p>
+        <a href="https://www.linkedin.com/in/rohan-k-torul/" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Rohan Torul</p>
+        </a>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+    <div style="text-align: center;">
         <img src="assets/public/img/people/Anderson Bath.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
         <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="www.linkedin.com/in/anderson-bath" target="_blank">
+        <a href="https://www.linkedin.com/in/anderson-bath" target="_blank">
             <p style="text-align: center; font-weight: smaller; margin-top: 0;">Anderson Bath</p>
         </a>
     </div>
-    <!-- <div style="text-align: center;">
-        <img src="assets/public/img/people/X.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
-        <p style="font-weight: bold; margin-bottom: 0;">Junior Member</p>
-        <a href="https://www.linkedin.com/in/mujtaba" target="_blank">
-            <p style="text-align: center; font-weight: smaller; margin-top: 0;">X</p>
+    <div style="text-align: center;">
+        <img src="assets/public/img/people/Garianna Knowles.png" alt="Team Member" style="width: 150px; object-fit: cover; border-radius: 50%;" class = "team-member-img">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 0;">Junior Member</p>
+        <a href="https://ca.linkedin.com/in/garianna-knowles-b3b533286" target="_blank">
+            <p style="text-align: center; font-weight: smaller; margin-top: 0;">Garianna Knowles</p>
         </a>
-    </div> -->
+    </div>
 </div>
+
+
 
 ### Electrical Team
 <div style="display: flex; justify-content: space-around;">
